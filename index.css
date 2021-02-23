@@ -1,0 +1,106 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body{
+    background-color:#3C3C3B;
+    color:#F5F3F5;
+    font-family:'Poppins', 'Roboto', sans-serif;
+    margin:0;
+    transition:2s;
+    -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2.5s; /* Firefox < 16 */
+        -ms-animation: fadein 2.5s; /* Internet Explorer */
+         -o-animation: fadein 2.5s; /* Opera < 12.1 */
+            animation: fadein 2.5s;
+}
+/*
+blue:1446A0
+pink:DB3069
+yellow:F5D547
+F4FAFF
+F7EDF0
+*/
+.copyrightContainer{
+    position: fixed;
+    left: 50%;
+    bottom: 0.2rem;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+.copyrightContainerText{
+    display:flex;
+    margin:0 auto;
+    justify-content: center;
+}
+.welcomeContainer{
+    display:flex;
+    margin:0 auto;
+    justify-content: center;
+    text-align: center;
+    border-bottom:3px solid #F5F3F5;
+    margin-bottom:2rem;
+}
+.widthHeightInput{
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+    text-align: center;
+    width:100%;
+}
+.inputBox > *{
+    font-size:2rem;
+    color:#F5F3F5;
+}
+.widthHeightButton{
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+    text-align: center;
+    margin-top:1rem;
+}
+.toastContainer{
+    transition:0.2s;
+    justify-content: center;
+    margin:0 auto;
+    text-align: center;
+    margin-top:2rem;
+}
+.toast{
+    transition:0.2s;
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+    text-align: center;
+    margin-top:2rem;
+}
+.toast-body{
+    transition:0.2s;
+    font-size: 1.75rem;
+}
+.outputContainerText{
+    transition:0.2s;
+    justify-content: center;
+    margin:0 auto;
+    text-align: center;
+    margin-top:0.5rem;
+}
